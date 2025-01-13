@@ -20,11 +20,11 @@ import children from './components/children.vue'
 const props = defineProps({
   width: {
     type: Number,
-    default: 4000,
+    default: 1920,
   },
   height: {
     type: Number,
-    default: 2000
+    default: 1080
   }
 })
 
@@ -32,8 +32,8 @@ const props = defineProps({
 
 const parentRef = ref(null)
 const { style, startDrag, zoom } = useParent(props)
-const styleObj = ref({ top: 80, left: 80, width: 2800, height: 1800 })
-const styleObj1 = ref({ top: 1000, left: 3000, width: 100, height: 500 })
+const styleObj = ref({ top: 80, left: 80, width: 800, height: 800 })
+const styleObj1 = ref({ top: 100, left: 300, width: 100, height: 500 })
 
 </script>
 <style scoped>
